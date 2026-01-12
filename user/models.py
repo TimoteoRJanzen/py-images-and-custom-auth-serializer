@@ -20,7 +20,6 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-
     def create_user(self, email, password=None, **extra_fields):
         """Create and save a regular User with the given email and password."""
 
